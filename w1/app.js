@@ -1,0 +1,1 @@
+console.log('Hello form app.js! Your JavaScript is connected and runing!')
