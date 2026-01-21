@@ -45,3 +45,5 @@ document.addEventListener('DOMContentLoaded', function(){
 // When 'addItemButton' receives a 'click' event, the 'handleButtonClick' function will execute.
     addItemButton.addEventListener(`click`, handleButtonClick)
 });
+
+//Step 2.4 Complete
