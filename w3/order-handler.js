@@ -13,7 +13,7 @@ const giftWrapCheckBox = orderForm.querySelector('#gift-wrap'); // Gift wrap che
 const getShirtSizeValue = function () {
     for (const radio of sizeRadio) {
         if (radio.checked) {
-            console.log(`${radio.value} is ${radio.checked}`);
+            //console.log(`${radio.value} is ${radio.checked}`);
             return radio.value
         }
     }
