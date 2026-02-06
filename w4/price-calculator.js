@@ -3,16 +3,16 @@ const shirtPrice = 15;
 const giftWrapPrice = 2;
 
 // redoing code so the math is done inside of "calculateTotal" and not checkoutPrice 
-export const calculateTotal = function(inputs) {
+export const calculateTotal = function (inputs) {
     // Prove object is passed and function is running
     console.log(`Inside checkoutPrice function.`);
     console.log('Here is our shirt order quantity: ', inputs.qty)
-    
+
     // Calculate the price; (quantity * ShirtPrice) + (giftWrap IF giftwrap is selected.)
     if (inputs.giftWrap) {
-        return { totalPrice: giftWrapPrice + shirtPrice * inputs.qty};
-    }else {
-        return { totalPrice: shirtPrice * inputs.qty};
+        return { totalPrice: giftWrapPrice + shirtPrice * inputs.qty };
+    } else {
+        return { totalPrice: shirtPrice * inputs.qty };
     }
 };
 
