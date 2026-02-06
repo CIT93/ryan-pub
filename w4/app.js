@@ -5,7 +5,7 @@ import * as priceCalculator from './price-calculator.js';
 
 const orderForm = document.getElementById('order-form');
 const orderSummary = document.getElementById('order-summary');
-
+const orders = [];
 
 const handleOrderSubmit = function (event) {
     event.preventDefault();
@@ -19,7 +19,14 @@ const handleOrderSubmit = function (event) {
     console.log(messege);
     orderSummary.textContent = messege;
 
+    const newOrder = {
+        ...inputs,
+        ...total,
+        timestamp: new Date().toISOString()
+    };
 
+    orders.push(newOrder);
+    console.log(`Here is the order array: `, orders);
 };
 
 document.addEventListener('DOMContentLoaded', function(){
