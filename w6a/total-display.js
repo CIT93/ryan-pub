@@ -25,3 +25,5 @@ export const displaySummary = function(inputs, total) {
     //     default: displayGift.textContent = "No gift wrap selected";
     // }
 };
+
+// Display already added: Step 2 Complete
