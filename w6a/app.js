@@ -3,6 +3,7 @@ console.log('Hello from app.js! Your JavaScript is connected and runing!')
 import * as orderHandler from './order-handler.js';
 import * as priceCalculator from './price-calculator.js';
 import * as totalDisplay from './total-display.js';
+import * as orderStorage from './order-storage.js';
 
 const orderForm = document.getElementById('order-form');
 const orders = [];
