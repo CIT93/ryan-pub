@@ -28,6 +28,7 @@ const handleOrderSubmit = function (event) {
     };
 
     orders.push(newOrder);
+    orderStorage.saveOrders(orders);
     console.log(`Here is the order array: `, orders);
 
     totalDisplay.displaySummary(inputs, total);
