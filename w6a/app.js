@@ -39,6 +39,13 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 const init = function () {
+    const loadedOrders = orderStorage.loadOrders();
+
+    if (loadedOrders.length > 0) {
+        orders.push(...loadedOrders);
+        console.log('Orders loaded.');
+    };
+
     orderForm.addEventListener('submit', handleOrderSubmit);
     console.log('app initialized')
 }
