@@ -17,8 +17,9 @@ const createRow = function (order) {
         <td>WIP</td>
         <td>${(order.qty)}</td>
         <td>${(order.size)}</td>
-        <td>${(order.giftWrap)}</td>
         <td>${order.totalPrice}</td>
+        <td>${(order.giftWrap)}</td>
+        <button>Delete</delete>
     `;
     return row
 }

@@ -32,6 +32,7 @@ const handleOrderSubmit = function (event) {
     orderStorage.saveOrders(orders);
     console.log(`Here is the order array: `, orders);
 
+    orderList.renderOrders(orders); 
     //totalDisplay.displaySummary(inputs, total);
 };
 
@@ -50,5 +51,5 @@ const init = function () {
 
     orderForm.addEventListener('submit', handleOrderSubmit);
     console.log('app initialized')
-
+    orderList.renderOrders(orders); 
 }
