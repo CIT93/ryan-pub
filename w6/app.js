@@ -2,7 +2,8 @@ console.log('Hello from app.js! Your JavaScript is connected and runing!')
 
 import * as orderHandler from './order-handler.js';
 import * as priceCalculator from './price-calculator.js';
-import * as totalDisplay from './total-display.js';
+//import * as totalDisplay from './total-display.js';
+import * as orderList from './order-list.js';
 import * as orderStorage from './order-storage.js';
 
 const orderForm = document.getElementById('order-form');
@@ -31,7 +32,7 @@ const handleOrderSubmit = function (event) {
     orderStorage.saveOrders(orders);
     console.log(`Here is the order array: `, orders);
 
-    totalDisplay.displaySummary(inputs, total);
+    //totalDisplay.displaySummary(inputs, total);
 };
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -49,4 +50,5 @@ const init = function () {
 
     orderForm.addEventListener('submit', handleOrderSubmit);
     console.log('app initialized')
+
 }
